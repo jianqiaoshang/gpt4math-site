@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>可编辑时间轴｜AI 数学史</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/future-roots.js" defer></script>
+</head>
+<body id="top">
+  <!--
+    手动修改节点名称：
+    1. 在本文件中搜索 <h3>。
+    2. 只修改 <h3> 与 </h3> 之间的文字。
+    3. 保存本文件，然后在浏览器中刷新。
+    横向快速导航会自动读取修改后的名称，无需修改其他位置。
+  -->
+  <header class="site-header shell">
+    <nav aria-label="主要导航">
+      <a href="可编辑时间轴.html">时间轴</a>
+      <a href="progress/formal-proof.html">源泉初涌</a><a href="progress/symbolic-computation.html">定渠载道</a><a href="progress/automated-reasoning.html">支流远引</a><a href="progress/scientific-discovery.html">百川竞发</a><a href="progress/foundation-models.html">同舟共济</a><a href="progress/human-ai-collaboration.html">自辟新河</a><a href="progress/norms-and-governance.html">立岸明约</a>
+      <a href="future.html">未来？</a>
+    </nav>
+  </header>
+  <main>
+    <section class="timeline-overview shell" aria-label="时间轴快速导航">
+      <div class="timeline-overview-grid" id="timelineOverview"></div>
+    </section>
+    <section class="timeline-section" id="timeline">
+      <div class="timeline shell timeline-with-future">
+        <div class="timeline-spine" aria-hidden="true"></div>
+      <article class="timeline-row timeline-left" id="event-001" data-year="1931-01" data-core="true" style="--category:#8FD3E8">
+        <span class="timeline-year">1931-01</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-001">
+          <small><i></i>源泉初涌</small>
+          <h3>Gödel证明不完备定理</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-002" data-year="1936-05-28" data-core="true" style="--category:#8FD3E8">
+        <span class="timeline-year">1936-05-28</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-002">
+          <small><i></i>源泉初涌</small>
+          <h3>可计算性理论出现</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-003" data-year="1943-12" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">1943-12</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-003">
+          <small><i></i>源泉初涌</small>
+          <h3>McCulloch–Pitts提出二值形式神经元，用逻辑网络建立人工神经网络的数学起点</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-004" data-year="1950-10-01" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">1950-10-01</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-004">
+          <small><i></i>源泉初涌</small>
+          <h3>图灵发表《计算机器与智能》，以模仿游戏将“机器能否思考”转化为可进行实验评价的问题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-005" data-year="1956-06-15" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">1956-06-15</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-005">
+          <small><i></i>定渠载道</small>
+          <h3>Logic Theorist开始自动证明数学定理</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-006" data-year="1960年代—1980年代" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">1960年代—1980年代</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-006">
+          <small><i></i>源泉初涌</small>
+          <h3>符号计算逐步成为数学研究的重要组成部分</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-007" data-year="1964-09-01" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">1964-09-01</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-007">
+          <small><i></i>源泉初涌</small>
+          <h3>STUDENT首次阅读并求解代数应用题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-008" data-year="1965-01-01" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">1965-01-01</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-008">
+          <small><i></i>定渠载道</small>
+          <h3>归结原理被提出，确定了自动证明规则</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-009" data-year="1967" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">1967</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-009">
+          <small><i></i>定渠载道</small>
+          <h3>Automath将数学写成机器可检查的语言</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-010" data-year="1970年代—1990年代" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">1970年代—1990年代</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-010">
+          <small><i></i>定渠载道</small>
+          <h3>证明助手确立“小型可信内核”架构</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-011" data-year="1973-11-14" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">1973-11-14</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-011">
+          <small><i></i>定渠载道</small>
+          <h3>机器开始拥有可读的数学文库（Mizar）</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-012" data-year="1976-06-21" data-core="true" style="--category:#D99A36">
+        <span class="timeline-year">1976-06-21</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/foundation-models.html#event-012">
+          <small><i></i>同舟共济</small>
+          <h3>首次出现依赖于计算机的证明（四色定理）</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-013" data-year="1976-07-01" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">1976-07-01</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-013">
+          <small><i></i>源泉初涌</small>
+          <h3>AM尝试自主发现数学概念</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-014" data-year="1980年代—1990年代" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">1980年代—1990年代</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-014">
+          <small><i></i>源泉初涌</small>
+          <h3>SAT与约束求解</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-015" data-year="1996-10-10" data-core="true" style="--category:#8E477F">
+        <span class="timeline-year">1996-10-10</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-015">
+          <small><i></i>自辟新河</small>
+          <h3>自动证明机器EQP证明Robbins问题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-016" data-year="1997-05-11" data-core="true" style="--category:#3FA58C">
+        <span class="timeline-year">1997-05-11</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/automated-reasoning.html#event-016">
+          <small><i></i>支流远引</small>
+          <h3>Deep Blue击败国际象棋世界冠军</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-017" data-year="2005-04" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2005-04</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-017">
+          <small><i></i>定渠载道</small>
+          <h3>四色定理获得完整的机器形式验证</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-018" data-year="2012-09-20" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2012-09-20</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-018">
+          <small><i></i>定渠载道</small>
+          <h3>奇阶定理完成形式化验证，证明助手开始处理复杂而深刻的现代数学成果</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-019" data-year="2013" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2013</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-019">
+          <small><i></i>定渠载道</small>
+          <h3>Lean的提出</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-020" data-year="2014-08-10" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2014-08-10</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-020">
+          <small><i></i>定渠载道</small>
+          <h3>Flyspeck给出Kepler猜想的完整形式验证</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-021" data-year="2015-09-21" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">2015-09-21</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-021">
+          <small><i></i>源泉初涌</small>
+          <h3>GeoS在SAT几何题上接近平均考生水平</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-022" data-year="2015-11-17" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">2015-11-17</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-022">
+          <small><i></i>源泉初涌</small>
+          <h3>Todai Robot超过日本大学入学考试平均分</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-023" data-year="2016-03-15" data-core="true" style="--category:#3FA58C">
+        <span class="timeline-year">2016-03-15</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/automated-reasoning.html#event-023">
+          <small><i></i>支流远引</small>
+          <h3>AlphaGo在五番棋中击败李世乭</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-024" data-year="2017-01-20" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">2017-01-20</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-024">
+          <small><i></i>定渠载道</small>
+          <h3>Lean与mathlib形成社区化形式数学路线</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-025" data-year="2017-06-07" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">2017-06-07</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-025">
+          <small><i></i>源泉初涌</small>
+          <h3>AI-MATHS参加中国高考数学考试</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-026" data-year="2017-06-12" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2017-06-12</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-026">
+          <small><i></i>百川竞发</small>
+          <h3>Transformer被提出，奠定了大语言模型的理论基础</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-027" data-year="2017-10-18" data-core="true" style="--category:#3FA58C">
+        <span class="timeline-year">2017-10-18</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/automated-reasoning.html#event-027">
+          <small><i></i>支流远引</small>
+          <h3>AlphaGo Zero开始用自我对弈取代人类棋谱</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-028" data-year="2019-04-02" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">2019-04-02</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-028">
+          <small><i></i>源泉初涌</small>
+          <h3>DeepMind发布Mathematics Dataset，通过程序生成的大规模数学题系统评测神经网络的数学推理与泛化能力</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-029" data-year="2019-09-07" data-core="true" style="--category:#A5684A">
+        <span class="timeline-year">2019-09-07</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/norms-and-governance.html#event-029">
+          <small><i></i>立岸明约</small>
+          <h3>数学界提出“AI获得IMO金牌”的明确目标</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-030" data-year="2019-12-02" data-core="false" style="--category:#8FD3E8">
+        <span class="timeline-year">2019-12-02</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/formal-proof.html#event-030">
+          <small><i></i>源泉初涌</small>
+          <h3>神经网络开始直接执行复杂符号积分与微分方程求解</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-031" data-year="2020-05-28" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2020-05-28</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-031">
+          <small><i></i>百川竞发</small>
+          <h3>GPT-3论文发表，AI开始拥有上下文学习能力</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-032" data-year="2020-09-07" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2020-09-07</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-032">
+          <small><i></i>定渠载道</small>
+          <h3>形式化证明搜索开始参考语言模型（GPT-f）</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-033" data-year="2020-11-30" data-core="true" style="--category:#3FA58C">
+        <span class="timeline-year">2020-11-30</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/automated-reasoning.html#event-033">
+          <small><i></i>支流远引</small>
+          <h3>AlphaFold 2突破蛋白质结构预测</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-034" data-year="2020-12-06" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2020-12-06</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-034">
+          <small><i></i>定渠载道</small>
+          <h3>Scholze公开向形式化数学界提出挑战，使用形式化数学验证凝聚态数学</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-035" data-year="2022-01-28" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2022-01-28</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-035">
+          <small><i></i>百川竞发</small>
+          <h3>思维链提示引导大语言模型写出中间步骤，AI开始掌握多步推理能力</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-036" data-year="2022-02-02" data-core="false" style="--category:#3FA58C">
+        <span class="timeline-year">2022-02-02</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/automated-reasoning.html#event-036">
+          <small><i></i>支流远引</small>
+          <h3>AlphaCode编程达到竞赛选手中等水平</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-037" data-year="2022-02-02" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">2022-02-02</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-037">
+          <small><i></i>定渠载道</small>
+          <h3>神经模型与Lean形成可验证证明循环</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-038" data-year="2022-03-21" data-core="false" style="--category:#3467D6">
+        <span class="timeline-year">2022-03-21</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-038">
+          <small><i></i>百川竞发</small>
+          <h3>AI生成多条推理路径并对答案投票</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-039" data-year="2022-05-25" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">2022-05-25</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-039">
+          <small><i></i>定渠载道</small>
+          <h3>提出如何自动形式化自然语言证明</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-040" data-year="2022-06-30" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2022-06-30</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-040">
+          <small><i></i>百川竞发</small>
+          <h3>Google发布数学模型Minerva，AI开始系统解答数学问题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-041" data-year="2022-08-22" data-core="true" style="--category:#3FA58C">
+        <span class="timeline-year">2022-08-22</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/automated-reasoning.html#event-041">
+          <small><i></i>支流远引</small>
+          <h3>AI绘画进入大众视野（Stable Diffusion）</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-042" data-year="2022-10-05" data-core="true" style="--category:#8E477F">
+        <span class="timeline-year">2022-10-05</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-042">
+          <small><i></i>自辟新河</small>
+          <h3>Alpha Tensor发现新的矩阵乘法算法</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-043" data-year="2022-11-30" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2022-11-30</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-043">
+          <small><i></i>百川竞发</small>
+          <h3>ChatGPT向大众开放</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-044" data-year="2023-03-14" data-core="false" style="--category:#3467D6">
+        <span class="timeline-year">2023-03-14</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-044">
+          <small><i></i>百川竞发</small>
+          <h3>Claude发布</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-045" data-year="2023-03-14" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2023-03-14</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-045">
+          <small><i></i>百川竞发</small>
+          <h3>GPT-4发布，大模型数学能力达到本科生水准</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-046" data-year="2023-04-11" data-core="false" style="--category:#3467D6">
+        <span class="timeline-year">2023-04-11</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-046">
+          <small><i></i>百川竞发</small>
+          <h3>中文大模型生态兴起（通义千问／Qwen）</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-047" data-year="2023-06-27" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">2023-06-27</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-047">
+          <small><i></i>定渠载道</small>
+          <h3>LeanDojo／ReProver等模型开始从Lean数学库中检索并生成证明</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-048" data-year="2023-11-27" data-core="true" style="--category:#A5684A">
+        <span class="timeline-year">2023-11-27</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/norms-and-governance.html#event-048">
+          <small><i></i>立岸明约</small>
+          <h3>AIMO Prize设立千万美元奖金，推动开放AI冲击IMO金牌</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-049" data-year="2023-12-06" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2023-12-06</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-049">
+          <small><i></i>百川竞发</small>
+          <h3>Gemini发布</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-050" data-year="2024-01-17" data-core="true" style="--category:#D99A36">
+        <span class="timeline-year">2024-01-17</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/foundation-models.html#event-050">
+          <small><i></i>同舟共济</small>
+          <h3>AlphaGeometry被提出，代表AI有了解决平面几何的能力</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-051" data-year="2024-02-05" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2024-02-05</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-051">
+          <small><i></i>百川竞发</small>
+          <h3>DeepSeekMath将领域预训练与GRPO强化学习结合，推动开放数学模型进入专门化训练阶段</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-052" data-year="2024-02-15" data-core="false" style="--category:#3467D6">
+        <span class="timeline-year">2024-02-15</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-052">
+          <small><i></i>百川竞发</small>
+          <h3>Gemini 1.5可读入资料容量大幅提升，AI可以一次读入整本数学资料</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-053" data-year="2024-07-25" data-core="true" style="--category:#356C9B">
+        <span class="timeline-year">2024-07-25</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-053">
+          <small><i></i>定渠载道</small>
+          <h3>形式化证明AI AlphaProof达到IMO银牌水平</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-054" data-year="2024-08-08" data-core="false" style="--category:#3467D6">
+        <span class="timeline-year">2024-08-08</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-054">
+          <small><i></i>百川竞发</small>
+          <h3>中文开放模型Qwen2-Math形成数学专用分支</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-055" data-year="2024-09-12" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2024-09-12</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-055">
+          <small><i></i>百川竞发</small>
+          <h3>OpenAI o1引入推理时计算功能</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-056" data-year="2024-12-26" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2024-12-26</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-056">
+          <small><i></i>百川竞发</small>
+          <h3>开源模型DeepSeek-V3等缩小了与闭源模型的差距</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-057" data-year="2025年全年" data-core="false" style="--category:#D99A36">
+        <span class="timeline-year">2025年全年</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/foundation-models.html#event-057">
+          <small><i></i>同舟共济</small>
+          <h3>大语言模型开始被众多数学工作者所接受</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-058" data-year="2025-01-20" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2025-01-20</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-058">
+          <small><i></i>百川竞发</small>
+          <h3>以DeepSeek-R1为代表的开放推理模型开始普及</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-059" data-year="2025-02-02" data-core="true" style="--category:#D99A36">
+        <span class="timeline-year">2025-02-02</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/foundation-models.html#event-059">
+          <small><i></i>同舟共济</small>
+          <h3>Deep Research为AI提供了强大的文献搜索功能</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-060" data-year="2025-02-24" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2025-02-24</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-060">
+          <small><i></i>百川竞发</small>
+          <h3>Claude 3.7将快速回答与延长思考统一在同一模型中</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-061" data-year="2025-05-20" data-core="true" style="--category:#3467D6">
+        <span class="timeline-year">2025-05-20</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/scientific-discovery.html#event-061">
+          <small><i></i>百川竞发</small>
+          <h3>Gemini Deep Think开始并行探索多个假设</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-062" data-year="2025-07-21" data-core="true" style="--category:#D99A36">
+        <span class="timeline-year">2025-07-21</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/foundation-models.html#event-062">
+          <small><i></i>同舟共济</small>
+          <h3>Gemini Deep Think达到IMO金牌水平</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-063" data-year="2025-09" data-core="false" style="--category:#A5684A">
+        <span class="timeline-year">2025-09</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/norms-and-governance.html#event-063">
+          <small><i></i>立岸明约</small>
+          <h3>以莱顿会议为代表，数学界开始集中讨论AI时代的研究规范</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-064" data-year="2025-11-24" data-core="true" style="--category:#D99A36">
+        <span class="timeline-year">2025-11-24</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/foundation-models.html#event-064">
+          <small><i></i>同舟共济</small>
+          <h3>GPT-5协助数学家解决Nesterov加速梯度法的点收敛问题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-065" data-year="2026-02-11" data-core="true" style="--category:#8E477F">
+        <span class="timeline-year">2026-02-11</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-065">
+          <small><i></i>自辟新河</small>
+          <h3>研究智能体形成“生成—验证—批评—修改”循环</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-066" data-year="2026-02-14" data-core="true" style="--category:#8E477F">
+        <span class="timeline-year">2026-02-14</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-066">
+          <small><i></i>自辟新河</small>
+          <h3>First Proof计划开始，AI开始攻克开放问题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-067" data-year="2026-03-19" data-core="false" style="--category:#8E477F">
+        <span class="timeline-year">2026-03-19</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-067">
+          <small><i></i>自辟新河</small>
+          <h3>研究者将形式反例生成定义为大模型训练任务，要求模型寻找反例并生成可由Lean自动验证的证明</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-068" data-year="2026-03-26" data-core="false" style="--category:#A5684A">
+        <span class="timeline-year">2026-03-26</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/norms-and-governance.html#event-068">
+          <small><i></i>立岸明约</small>
+          <h3>Commelin、Jamnik、Venkatesh等数学家发表《塑造AI时代数学的未来》，呼吁数学共同体主动制定技术、教育与伦理方向</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-069" data-year="2026-05-13" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">2026-05-13</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-069">
+          <small><i></i>定渠载道</small>
+          <h3>Formal Conjectures将开放猜想整理为机器可验证的题库</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-070" data-year="2026-05-20" data-core="true" style="--category:#8E477F">
+        <span class="timeline-year">2026-05-20</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-070">
+          <small><i></i>自辟新河</small>
+          <h3>Unit distance猜想被推翻</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-071" data-year="2026-05-21" data-core="true" style="--category:#8E477F">
+        <span class="timeline-year">2026-05-21</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-071">
+          <small><i></i>自辟新河</small>
+          <h3>形式证明智能体开始批量扫描开放问题</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-072" data-year="2026-06-02" data-core="true" style="--category:#A5684A">
+        <span class="timeline-year">2026-06-02</span>
+        <button class="timeline-node is-core" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/norms-and-governance.html#event-072">
+          <small><i></i>立岸明约</small>
+          <h3>《莱顿宣言》确立AI参与数学研究的基本规范</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-073" data-year="2026-06-03" data-core="false" style="--category:#356C9B">
+        <span class="timeline-year">2026-06-03</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/symbolic-computation.html#event-073">
+          <small><i></i>定渠载道</small>
+          <h3>LeanMarathon开始承担长篇形式化工程</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-074" data-year="2026-07-10" data-core="false" style="--category:#8E477F">
+        <span class="timeline-year">2026-07-10</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-074">
+          <small><i></i>自辟新河</small>
+          <h3>Cycle Double Cover猜想被证明</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-left" id="event-075" data-year="2026-07-19" data-core="false" style="--category:#8E477F">
+        <span class="timeline-year">2026-07-19</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-075">
+          <small><i></i>自辟新河</small>
+          <h3>三维Jacobian猜想被推翻</h3>
+        </a>
+      </article>
+      <article class="timeline-row timeline-right" id="event-076" data-year="2026-08-01" data-core="false" style="--category:#8E477F">
+        <span class="timeline-year">2026-08-01</span>
+        <button class="timeline-node" type="button" aria-label="时间节点"></button>
+        <a class="timeline-card" href="progress/human-ai-collaboration.html#event-076">
+          <small><i></i>自辟新河</small>
+          <h3>OpenAI公布十个相对重要结果的证明/反例</h3>
+        </a>
+      </article>
+      <a class="timeline-future-end" href="future.html" aria-label="进入未来页面">
+        <span class="timeline-future-branches" aria-hidden="true"><canvas class="timeline-future-roots"></canvas></span>
+        <span class="timeline-future-label">未来会怎样？</span>
+      </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer shell">
+    <a href="可编辑时间轴.html">AI 数学史</a>
+    <a href="#top">返回顶部 ↑</a>
+  </footer>
+  <script>
+    (function () {
+      var rows = Array.from(document.querySelectorAll(".timeline-row"));
+      var ranges = [{ start: 1931, end: 2019 }, { start: 2020, end: 2026 }];
+      var overview = document.getElementById("timelineOverview");
+
+      function escapeAttribute(value) {
+        return String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      }
+
+      rows.forEach(function (row) {
+        var year = row.dataset.year;
+        var title = row.querySelector("h3").textContent.trim();
+        var node = row.querySelector(".timeline-node");
+        node.setAttribute("aria-label", (row.dataset.core === "true" ? "核心节点：" : "时间节点：") + year + "，" + title);
+      });
+
+      overview.innerHTML = ranges.map(function (range) {
+        var rangeRows = rows.filter(function (row) {
+          var match = row.dataset.year.match(/\d{4}/);
+          var year = match ? Number(match[0]) : 0;
+          return year >= range.start && year <= range.end;
+        });
+
+        var dots = rangeRows.map(function (row, rowIndex) {
+          var value = row.dataset.year;
+          var match = value.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+          var year = Number(match[1]);
+          var month = match[2] ? Number(match[2]) : 7;
+          var day = match[3] ? Number(match[3]) : 15;
+          var point = year + ((month - 1) + ((day - 1) / 31)) / 12;
+          var position = 2 + ((point - range.start) / (range.end - range.start + 1)) * 96;
+          var sameDateRows = rangeRows.filter(function (item) { return item.dataset.year === value; });
+          var sameDateIndex = rangeRows.slice(0, rowIndex).filter(function (item) { return item.dataset.year === value; }).length;
+          position += (sameDateIndex - ((sameDateRows.length - 1) / 2)) * 2.2;
+          position = Math.max(2, Math.min(98, position));
+          var title = row.querySelector("h3").textContent.trim();
+          var color = row.style.getPropertyValue("--category");
+          var coreClass = row.dataset.core === "true" ? " is-core" : "";
+          return '<a class="timeline-overview-dot' + coreClass + '" href="#' + row.id + '" style="--position:' + position.toFixed(3) + '%;--category:' + color + '" aria-label="定位到' + escapeAttribute(value) + '：' + escapeAttribute(title) + '" title="' + escapeAttribute(value) + '"></a>';
+        }).join("");
+
+        return '<div class="timeline-overview-item"><div class="timeline-overview-track">' + dots + '</div><div class="timeline-overview-labels"><span>' + range.start + '</span><span>' + range.end + '</span></div></div>';
+      }).join("");
+    })();
+  </script>
+</body>
+</html>
