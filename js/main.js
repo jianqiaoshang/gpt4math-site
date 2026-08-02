@@ -23,6 +23,7 @@
           return '<a href="' + path('progress/' + category.slug + '.html') + '">' + category.name + '</a>';
         }).join('') +
         '<a href="' + path('future.html') + '">未来？</a>' +
+        '<a href="' + path('forum.html') + '">停舟问渡</a>' +
       '</nav>';
   }
 
