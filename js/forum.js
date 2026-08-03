@@ -3,7 +3,6 @@
 
   var target = document.querySelector(".giscus");
   var setup = document.getElementById("forumSetup");
-  var githubLink = document.getElementById("forumGithubLink");
   var config = window.GISCUS_CONFIG || {};
 
   if (!target) return;
@@ -12,10 +11,6 @@
   if (!ready) return;
 
   if (setup) setup.hidden = true;
-  if (githubLink) {
-    githubLink.href = "https://github.com/" + config.repo + "/discussions";
-    githubLink.hidden = false;
-  }
 
   var script = document.createElement("script");
   script.src = "https://giscus.app/client.js";
