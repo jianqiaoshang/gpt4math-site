@@ -56,6 +56,14 @@
         colorName: "岩岸赭",
         color: "#A5684A",
         intro: "数学界针对人工智能提出的目标、倡议、宣言和学术规范。"
+      },
+      {
+        slug: "undercurrents",
+        name: "暗流涌动",
+        english: "UNDERCURRENTS",
+        colorName: "灰黑色",
+        color: "#45484D",
+        intro: "AI在数学领域大显身手的同时，引发了关于学术规范和成果评判的危机。"
       }
     ],
     events: [
@@ -227,6 +235,7 @@
     ["2025-01-20", "scientific-discovery", true, "以DeepSeek-R1为代表的开放推理模型开始普及", "https://api-docs.deepseek.com/news/news250120"],
     ["2025-02-02", "foundation-models", true, "Deep Research为AI提供了强大的文献搜索功能", "https://openai.com/index/introducing-deep-research/"],
     ["2025-02-24", "scientific-discovery", true, "Claude 3.7将快速回答与延长思考统一在同一模型中", "https://www.anthropic.com/news/claude-3-7-sonnet"],
+    ["2025-03-31", "automated-reasoning", true, "GPT-4.5通过图灵测试", "https://arxiv.org/abs/2503.23674"],
     ["2025-05-20", "scientific-discovery", true, "Gemini Deep Think开始并行探索多个假设", "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-updates-io-2025/"],
     ["2025-07-21", "foundation-models", true, "Gemini Deep Think达到IMO金牌水平", "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/"],
     ["2025-09", "norms-and-governance", false, "以莱顿会议为代表，数学界开始集中讨论AI时代的研究规范", "https://leidendeclaration.ai/"],
@@ -242,7 +251,13 @@
     ["2026-06-03", "symbolic-computation", false, "LeanMarathon开始承担长篇形式化工程", "https://arxiv.org/abs/2606.05400"],
     ["2026-07-10", "human-ai-collaboration", false, "Cycle Double Cover猜想被证明", "https://arxiv.org/abs/2607.16356"],
     ["2026-07-19", "human-ai-collaboration", false, "三维Jacobian猜想被推翻", "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/"],
-    ["2026-08-01", "human-ai-collaboration", false, "OpenAI公布十个相对重要结果的证明/反例", "https://openai.com/index/ten-advances-in-mathematics/"]
+    ["2026-07-21", "automated-reasoning", true, "GPT-5.6 Sol等模型在网络安全评估中突破隔离边界", "https://openai.com/index/hugging-face-model-evaluation-security-incident/"],
+    ["2026-08-01", "human-ai-collaboration", false, "OpenAI公布十个相对重要结果的证明/反例", "https://openai.com/index/ten-advances-in-mathematics/"],
+    ["2026-08-10", "human-ai-collaboration", true, "Claude将黎曼ζ函数临界线上零点的比例下界提高到约67.2%", "https://www.anthropic.com/research/riemann-zeta"],
+    ["2026-08-13—08-21", "undercurrents", true, "短期内Gromov Volume Conjeture在五篇独立且AI使用程度不同的文章里被证明，引发对AI时代学术结果归属的讨论", "https://www.reddit.com/r/mathematics/comments/1vrgwtn/multiple_papers_being_posted_on_arxiv_proving_the/"],
+    ["2026-08-17", "norms-and-governance", true, "陶哲轩发布《Mathematics in the Age of AI》，系统讨论AI时代数学的目标、价值与评价体系", "https://arxiv.org/abs/2608.16753"],
+    ["2026-08-19", "human-ai-collaboration", true, "Yau-Tian-Donaldson猜想被证伪", "https://arxiv.org/abs/2608.19301"],
+    ["2026-08-23", "human-ai-collaboration", true, "Alpöge公布由Claude完成的S⁶复结构存在性证明", "https://alpo.ge/s6.pdf"]
   ].map(function (item, index) {
     return {
       id: "event-" + String(index + 1).padStart(3, "0"),
