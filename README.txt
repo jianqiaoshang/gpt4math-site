@@ -1,4 +1,4 @@
-AI 数学史 · 静态网站
+History of AI4Math · 静态网站
 
 入口文件：index.html
 

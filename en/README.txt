@@ -1,4 +1,4 @@
-AI and Math: A History · Static Website
+History of AI4Math · Static Website
 
 Entry point: index.html
 

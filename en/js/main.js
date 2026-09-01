@@ -39,7 +39,7 @@
     var target = document.getElementById("siteFooter");
     if (!target) return;
     target.innerHTML =
-      '<a href="' + path('index.html') + '">AI and Math: A History</a>' +
+      '<a href="' + path('index.html') + '">History of AI4Math</a>' +
       '<a href="#top">Back to top ↑</a>';
   }
 
@@ -72,7 +72,7 @@
           '<div class="timeline-overview-track">' +
             rangeEvents.map(function (event, eventIndex) {
               var category = categoryBySlug(event.category);
-              var dateMatch = event.year.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+              var dateMatch = event.year.match(/(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
               var year = Number(dateMatch[1]);
               var month = dateMatch[2] ? Number(dateMatch[2]) : 7;
               var day = dateMatch[3] ? Number(dateMatch[3]) : 15;
@@ -130,7 +130,7 @@
           '</article>';
         }).join('') +
       '</section>' : '';
-    document.title = category.name + ' | AI and Math: A History';
+    document.title = category.name + ' | History of AI4Math';
 
     target.style.setProperty('--category', category.color);
     target.innerHTML =
