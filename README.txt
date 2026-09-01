@@ -11,6 +11,8 @@ AI 数学史 · 静态网站
 页面结构：
 - index.html：首页与时间轴
 - future.html：未来展望
-- progress/*.html：七个主题页面
+- forum.html：讨论页面
+- progress/*.html：八个主题页面
+- en/：完整英文版；可通过页面右上角的 Language 切换
 
 整个网站不需要安装 Node.js，也不需要构建。

@@ -13,21 +13,25 @@
     return data.categories.find(function (category) { return category.slug === slug; });
   }
 
+  function chinesePageHref() {
+    if (body.dataset.page === "progress") {
+      return "../../progress/" + body.dataset.slug + ".html";
+    }
+    return "../" + (body.dataset.page === "home" ? "index" : body.dataset.page) + ".html";
+  }
+
   function renderHeader() {
     var target = document.getElementById("siteHeader");
     if (!target) return;
-    var englishHref = body.dataset.page === "progress"
-      ? path("en/progress/" + body.dataset.slug + ".html")
-      : path("en/" + (body.dataset.page === "home" ? "index" : body.dataset.page) + ".html");
     target.innerHTML =
-      '<a class="language-switch" href="' + englishHref + '" lang="en" aria-label="Switch to English">Language · EN</a>' +
-      '<nav aria-label="主要导航">' +
-        '<a href="' + path('index.html') + '">时间轴</a>' +
+      '<a class="language-switch" href="' + chinesePageHref() + '" lang="zh-CN" aria-label="Switch to Chinese">Language · 中文</a>' +
+      '<nav aria-label="Primary navigation">' +
+        '<a href="' + path('index.html') + '">Timeline</a>' +
         data.categories.map(function (category) {
           return '<a href="' + path('progress/' + category.slug + '.html') + '">' + category.name + '</a>';
         }).join('') +
-        '<a href="' + path('future.html') + '">未来？</a>' +
-        '<a href="' + path('forum.html') + '">停舟问渡</a>' +
+        '<a href="' + path('future.html') + '">Future?</a>' +
+        '<a href="' + path('forum.html') + '">Ask at the Crossing</a>' +
       '</nav>';
   }
 
@@ -35,8 +39,8 @@
     var target = document.getElementById("siteFooter");
     if (!target) return;
     target.innerHTML =
-      '<a href="' + path('index.html') + '">AI 数学史</a>' +
-      '<a href="#top">返回顶部 ↑</a>';
+      '<a href="' + path('index.html') + '">AI and Math: A History</a>' +
+      '<a href="#top">Back to top ↑</a>';
   }
 
   function renderHome() {
@@ -81,7 +85,7 @@
               var coreClass = event.core ? ' is-core' : '';
               return '<a class="timeline-overview-dot' + coreClass + '" href="#' + event.id + '" ' +
                 'style="--position:' + position.toFixed(3) + '%;--category:' + category.color + '" ' +
-                'aria-label="定位到' + event.year + '：' + event.title + '" title="' + event.year + '"></a>';
+                'aria-label="Jump to ' + event.year + ': ' + event.title + '" title="' + event.year + '"></a>';
             }).join('') +
           '</div>' +
           '<div class="timeline-overview-labels"><span>' + range.start + '</span><span>' + range.end + '</span></div>' +
@@ -91,23 +95,20 @@
 
     timelineTarget.innerHTML = '<div class="timeline-spine" aria-hidden="true"></div>' + data.events.map(function (event, index) {
       var category = categoryBySlug(event.category);
-      var detail = event.detail ? '<aside>' + event.detail + '</aside>' : '';
-      var summary = event.summary ? '<p>' + event.summary + '</p>' : '';
       var coreClass = event.core ? ' is-core' : '';
-      var nodeLabel = event.core ? '核心节点：' : '时间节点：';
+      var nodeLabel = event.core ? 'Core milestone: ' : 'Timeline milestone: ';
       return '<article class="timeline-row ' + (index % 2 === 0 ? 'timeline-left' : 'timeline-right') + '" style="--category:' + category.color + '" id="' + event.id + '">' +
         '<span class="timeline-year">' + event.year + '</span>' +
-        '<button class="timeline-node' + coreClass + '" type="button" aria-label="' + nodeLabel + event.year + '，' + event.title + '"></button>' +
+        '<button class="timeline-node' + coreClass + '" type="button" aria-label="' + nodeLabel + event.year + ', ' + event.title + '"></button>' +
         '<a class="timeline-card" href="progress/' + category.slug + '.html#' + event.id + '">' +
           '<small><i></i>' + category.name + '</small>' +
           '<h3>' + event.title + '</h3>' +
-          summary +
-        '</a>' + detail +
+        '</a>' +
       '</article>';
     }).join("") +
-      '<a class="timeline-future-end" href="future.html" aria-label="进入未来页面">' +
+      '<a class="timeline-future-end" href="future.html" aria-label="Open the future page">' +
         '<span class="timeline-future-branches" aria-hidden="true"><canvas class="timeline-future-roots"></canvas></span>' +
-        '<span class="timeline-future-label">未来会怎样？</span>' +
+        '<span class="timeline-future-label">What comes next?</span>' +
       '</a>';
   }
 
@@ -122,23 +123,19 @@
     var milestones = events.length ?
       '<section class="milestones shell">' +
         events.map(function (event) {
-          var summary = event.summary ? '<p>' + event.summary + '</p>' : '';
-          var source = event.source ? '<a class="milestone-source" href="' + event.source + '" target="_blank" rel="noopener noreferrer">参考链接 ↗</a>' : '';
+          var source = event.source ? '<a class="milestone-source" href="' + event.source + '" target="_blank" rel="noopener noreferrer">Reference ↗</a>' : '';
           return '<article id="' + event.id + '">' +
             '<time>' + event.year + '</time>' +
-            '<div><h2>' + event.title + '</h2>' + summary +
-              (event.detail ? '<p class="milestone-detail">' + event.detail + '</p>' : '') +
-              source +
-            '</div>' +
+            '<div><h2>' + event.title + '</h2>' + source + '</div>' +
           '</article>';
         }).join('') +
       '</section>' : '';
-    document.title = category.name + '｜AI 数学史';
+    document.title = category.name + ' | AI and Math: A History';
 
     target.style.setProperty('--category', category.color);
     target.innerHTML =
       '<section class="topic-hero shell">' +
-        '<a class="back-link" href="../index.html">← 时间轴</a>' +
+        '<a class="back-link" href="../index.html">← Timeline</a>' +
         '<h1>' + category.name + '</h1>' +
         '<div class="topic-rule"></div>' +
         intro +
@@ -146,24 +143,11 @@
       milestones;
   }
 
-  function renderFuture() {
-    var themes = document.getElementById("futureThemes");
-    var categories = document.getElementById("futureCategories");
-    if (!themes || !categories) return;
-    themes.innerHTML = data.futureThemes.map(function (theme) {
-      return '<article><span>' + theme.index + '</span><h2>' + theme.title + '</h2><p>' + theme.text + '</p></article>';
-    }).join('');
-    categories.innerHTML = data.categories.map(function (category) {
-      return '<a href="progress/' + category.slug + '.html" style="--category:' + category.color + '"><i></i>' + category.name + '<span>↗</span></a>';
-    }).join('');
-  }
-
   renderHeader();
   renderFooter();
 
   if (body.dataset.page === "home") renderHome();
   if (body.dataset.page === "progress") renderProgress();
-  if (body.dataset.page === "future") renderFuture();
 
   document.addEventListener("click", function (event) {
     var node = event.target.closest(".timeline-node");
