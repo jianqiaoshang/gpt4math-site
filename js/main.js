@@ -35,7 +35,7 @@
     var target = document.getElementById("siteFooter");
     if (!target) return;
     target.innerHTML =
-      '<a href="' + path('index.html') + '">History of AI4Math</a>' +
+      '<a href="' + path('index.html') + '">AI 数学史</a>' +
       '<a href="#top">返回顶部 ↑</a>';
   }
 
@@ -133,7 +133,7 @@
           '</article>';
         }).join('') +
       '</section>' : '';
-    document.title = category.name + '｜History of AI4Math';
+    document.title = category.name + '｜AI 数学史';
 
     target.style.setProperty('--category', category.color);
     target.innerHTML =
