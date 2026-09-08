@@ -144,7 +144,10 @@
       ["2026-08-13—08-21", "undercurrents", true, "Within a short period, the Gromov Volume Conjeture is proved in five independent papers with differing levels of AI use, prompting debate over the attribution of academic results in the AI era", "https://www.reddit.com/r/mathematics/comments/1vrgwtn/multiple_papers_being_posted_on_arxiv_proving_the/"],
       ["2026-08-17", "norms-and-governance", true, "Terence Tao publishes “Mathematics in the Age of AI,” systematically discussing the goals, values, and evaluation systems of mathematics in the AI era", "https://arxiv.org/abs/2608.16753"],
       ["2026-08-19", "human-ai-collaboration", true, "The Yau–Tian–Donaldson Conjecture is disproved", "https://arxiv.org/abs/2608.19301"],
-      ["2026-08-23", "human-ai-collaboration", true, "Alpöge announces a proof by Claude of the existence of a complex structure on S⁶", "https://alpo.ge/s6.pdf"]
+      ["2026-08-23", "human-ai-collaboration", true, "Alpöge announces a proof by Claude of the existence of a complex structure on S⁶", "https://alpo.ge/s6.pdf"],
+      ["2026-09-03", "human-ai-collaboration", true, "GPT 6 advances the upper bound for prime gaps to 186", "https://openai.com/index/gpt-6-astra/"],
+      ["2026-09-04", "human-ai-collaboration", true, "Claude completes a formalized proof of Fermat's Last Theorem", "https://www.anthropic.com/research/formalizing-fermats-last-theorem"],
+      ["2026-09-08", "undercurrents", true, "OpenAI and human mathematicians dispute attribution for a forced Navier–Stokes blow-up result", "https://officechai.com/ai/anthropic-openai-researchers-spar-over-what-appears-to-be-credit-for-progress-towards-solving-navier-stokes-equation/"]
     ].map(function (item, index) {
       return {
         id: "event-" + String(index + 1).padStart(3, "0"),

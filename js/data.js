@@ -257,7 +257,10 @@
     ["2026-08-13—08-21", "undercurrents", true, "短期内Gromov Volume Conjeture在五篇独立且AI使用程度不同的文章里被证明，引发对AI时代学术结果归属的讨论", "https://www.reddit.com/r/mathematics/comments/1vrgwtn/multiple_papers_being_posted_on_arxiv_proving_the/"],
     ["2026-08-17", "norms-and-governance", true, "陶哲轩发布《Mathematics in the Age of AI》，系统讨论AI时代数学的目标、价值与评价体系", "https://arxiv.org/abs/2608.16753"],
     ["2026-08-19", "human-ai-collaboration", true, "Yau-Tian-Donaldson猜想被证伪", "https://arxiv.org/abs/2608.19301"],
-    ["2026-08-23", "human-ai-collaboration", true, "Alpöge公布由Claude完成的S⁶复结构存在性证明", "https://alpo.ge/s6.pdf"]
+    ["2026-08-23", "human-ai-collaboration", true, "Alpöge公布由Claude完成的S⁶复结构存在性证明", "https://alpo.ge/s6.pdf"],
+    ["2026-09-03", "human-ai-collaboration", true, "GPT 6将素数间隙上界推进至186", "https://openai.com/index/gpt-6-astra/"],
+    ["2026-09-04", "human-ai-collaboration", true, "Claude完成费马大定理的形式化证明", "https://www.anthropic.com/research/formalizing-fermats-last-theorem"],
+    ["2026-09-08", "undercurrents", true, "OpenAI与人类数学家对NS方程外力条件下爆破解的归属权产生争议", "https://officechai.com/ai/anthropic-openai-researchers-spar-over-what-appears-to-be-credit-for-progress-towards-solving-navier-stokes-equation/"]
   ].map(function (item, index) {
     return {
       id: "event-" + String(index + 1).padStart(3, "0"),
