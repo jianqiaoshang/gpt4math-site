@@ -262,7 +262,7 @@
     ["2026-09-04", "human-ai-collaboration", true, "Claude完成费马大定理的形式化证明", "https://www.anthropic.com/research/formalizing-fermats-last-theorem"],
     ["2026-09-08", "undercurrents", true, "OpenAI与人类数学家对NS方程外力条件下爆破解的归属权产生争议", "https://officechai.com/ai/anthropic-openai-researchers-spar-over-what-appears-to-be-credit-for-progress-towards-solving-navier-stokes-equation/"],
     ["2026-09-11", "norms-and-governance", true, "多位菲尔兹奖得主联合发表《A Severe Misalignment of AI in Mathematics》", "https://mathandai.org/"],
-    ["2026-10-06", "human-ai-collaboration", true, "OpenAI发布722份数学结果，涵盖数学的许多方向", "https://openai.com/index/sharing-ai-progress-in-mathematics/"]
+    ["2026-10-06", "human-ai-collaboration", true, "OpenAI发布722份数学结果，涵盖许多不同方向的重要问题", "https://openai.com/index/sharing-ai-progress-in-mathematics/"]
   ].map(function (item, index) {
     return {
       id: "event-" + String(index + 1).padStart(3, "0"),

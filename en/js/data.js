@@ -149,7 +149,7 @@
       ["2026-09-04", "human-ai-collaboration", true, "Claude completes a formalized proof of Fermat's Last Theorem", "https://www.anthropic.com/research/formalizing-fermats-last-theorem"],
       ["2026-09-08", "undercurrents", true, "OpenAI and human mathematicians dispute attribution for a forced Navier–Stokes blow-up result", "https://officechai.com/ai/anthropic-openai-researchers-spar-over-what-appears-to-be-credit-for-progress-towards-solving-navier-stokes-equation/"],
       ["2026-09-11", "norms-and-governance", true, "Multiple Fields Medalists jointly publish ‘A Severe Misalignment of AI in Mathematics’", "https://mathandai.org/"],
-      ["2026-10-06", "human-ai-collaboration", true, "OpenAI releases 722 mathematical results spanning many areas of mathematics", "https://openai.com/index/sharing-ai-progress-in-mathematics/"]
+      ["2026-10-06", "human-ai-collaboration", true, "OpenAI releases 722 mathematical results addressing important problems across many different fields", "https://openai.com/index/sharing-ai-progress-in-mathematics/"]
     ].map(function (item, index) {
       return {
         id: "event-" + String(index + 1).padStart(3, "0"),
