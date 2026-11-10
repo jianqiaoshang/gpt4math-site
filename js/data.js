@@ -262,7 +262,12 @@
     ["2026-09-04", "human-ai-collaboration", true, "Claude完成费马大定理的形式化证明", "https://www.anthropic.com/research/formalizing-fermats-last-theorem"],
     ["2026-09-08", "undercurrents", true, "OpenAI与人类数学家对NS方程外力条件下爆破解的归属权产生争议", "https://officechai.com/ai/anthropic-openai-researchers-spar-over-what-appears-to-be-credit-for-progress-towards-solving-navier-stokes-equation/"],
     ["2026-09-11", "norms-and-governance", true, "多位菲尔兹奖得主联合发表《A Severe Misalignment of AI in Mathematics》", "https://mathandai.org/"],
-    ["2026-10-06", "human-ai-collaboration", true, "OpenAI发布722份数学结果，涵盖许多不同方向的重要问题", "https://openai.com/index/sharing-ai-progress-in-mathematics/"]
+    ["2026-10-06", "human-ai-collaboration", true, "OpenAI发布722份数学结果，涵盖许多不同方向的重要问题", "https://openai.com/index/sharing-ai-progress-in-mathematics/"],
+    ["2026-10-15", "norms-and-governance", true, "Simons基金会、OpenAI与Anthropic投入1500万美元支持数学界应对AI变革", "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/"],
+    ["2026-10-22", "undercurrents", false, "一项包含153名学生的实验发现，聊天式AI提高作业成绩，但没有带来可检测的考试提升；使用越多还与较低考试成绩相关。", "https://arxiv.org/abs/2610.31481"],
+    ["2026-10-24", "norms-and-governance", false, "数学界建立oai-math-revised，共同检查和修订OpenAI数学手稿", "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/"],
+    ["2026-10-25", "norms-and-governance", true, "AGMAI反对AI公司预先指定数学家解释AI成果", "https://agmai.org/"],
+    ["2026-10-26", "human-ai-collaboration", true, "OpenAI发布三份重量级成果，包括局部平滑猜想的全维证明，证伪指数时间假设，证明杨–米尔斯理论与量子色动力学的数学存在性", "https://openai.com/index/building-scientific-understanding-with-academic-communities/"]
   ].map(function (item, index) {
     return {
       id: "event-" + String(index + 1).padStart(3, "0"),

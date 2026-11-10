@@ -149,7 +149,12 @@
       ["2026-09-04", "human-ai-collaboration", true, "Claude completes a formalized proof of Fermat's Last Theorem", "https://www.anthropic.com/research/formalizing-fermats-last-theorem"],
       ["2026-09-08", "undercurrents", true, "OpenAI and human mathematicians dispute attribution for a forced Navier–Stokes blow-up result", "https://officechai.com/ai/anthropic-openai-researchers-spar-over-what-appears-to-be-credit-for-progress-towards-solving-navier-stokes-equation/"],
       ["2026-09-11", "norms-and-governance", true, "Multiple Fields Medalists jointly publish ‘A Severe Misalignment of AI in Mathematics’", "https://mathandai.org/"],
-      ["2026-10-06", "human-ai-collaboration", true, "OpenAI releases 722 mathematical results addressing important problems across many different fields", "https://openai.com/index/sharing-ai-progress-in-mathematics/"]
+      ["2026-10-06", "human-ai-collaboration", true, "OpenAI releases 722 mathematical results addressing important problems across many different fields", "https://openai.com/index/sharing-ai-progress-in-mathematics/"],
+      ["2026-10-15", "norms-and-governance", true, "The Simons Foundation, OpenAI, and Anthropic commit $15 million to help the mathematics community navigate AI-driven change", "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/"],
+      ["2026-10-22", "undercurrents", false, "A study of 153 students finds that chat-based AI improves homework scores but produces no detectable gains in exam performance; greater use is also associated with lower exam scores.", "https://arxiv.org/abs/2610.31481"],
+      ["2026-10-24", "norms-and-governance", false, "The mathematics community establishes oai-math-revised to jointly review and revise OpenAI's mathematical manuscripts", "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/"],
+      ["2026-10-25", "norms-and-governance", true, "AGMAI opposes AI companies preselecting mathematicians to interpret AI-generated results", "https://agmai.org/"],
+      ["2026-10-26", "human-ai-collaboration", true, "OpenAI releases three major results: an all-dimensional proof of the local smoothing conjecture, a refutation of the Exponential Time Hypothesis, and proofs of the mathematical existence of Yang–Mills theory and quantum chromodynamics", "https://openai.com/index/building-scientific-understanding-with-academic-communities/"]
     ].map(function (item, index) {
       return {
         id: "event-" + String(index + 1).padStart(3, "0"),
